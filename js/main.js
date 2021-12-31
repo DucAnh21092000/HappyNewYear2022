@@ -77,7 +77,7 @@ function Firework( sx, sy, tx, ty ) {
     this.acceleration = 1.05;
     this.brightness = random( 50, 70 );
     // circle target indicator radius
-    this.targetRadius = 1;
+    this.targetRadius = 2;
 }
 
 // update firework
@@ -232,10 +232,16 @@ function loop() {
         if( !mousedown ) {
             // start the firework at the bottom middle of the screen, then set the random target coordinates, the random y coordinates will be set within the range of the top half of the screen
             fireworks.push( new Firework( cw / 2, ch, random( 0, cw ), random( 0, ch / 2 ) ) );
+            fireworks.push( new Firework( cw / 2, ch, random( 0, cw ), random( 0, ch / 2 ) ) );
+            fireworks.push( new Firework( cw / 2, ch, random( 0, cw ), random( 0, ch / 2 ) ) );
+            fireworks.push( new Firework( cw / 2, ch, random( 0, cw ), random( 0, ch / 2 ) ) );
+            fireworks.push( new Firework( cw / 2, ch, random( 0, cw ), random( 0, ch / 2 ) ) );
+            fireworks.push( new Firework( cw / 2, ch, random( 0, cw ), random( 0, ch / 2 ) ) );
             timerTick = 0;
         }
     } else {
         timerTick++;
+       
     }
 
     // limit the rate at which fireworks get launched when mouse is down
