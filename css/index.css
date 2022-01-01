@@ -18,11 +18,14 @@ body{
     text-shadow: white 2px 3px;
     letter-spacing: 5px;
 }
-.content{
+.content,.mess{
     font-size: 2rem;
     color: white;
     opacity: 0.7;
     text-shadow: red 2px 3px;
+}
+.mess{
+    font-size: 1.6rem;
 }
 .main{
     background-image: url("https://hinhanhdephd.com/wp-content/uploads/2019/02/hinh-nen-phao-hoa-dong-gif-11.gif");
@@ -32,8 +35,10 @@ body{
     background-size: contain;
     transition: all 20s linear;
 }
-.year,.content{
+.year,.content,.mess,.icon{
     background-color: black;
+    letter-spacing: 3px;
+
 }
 #info {
     background:#333;
