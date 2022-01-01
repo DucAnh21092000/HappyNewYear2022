@@ -14,8 +14,17 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="./css/index.css" rel="stylesheet" type="text/css">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+          <!-- jQuery library -->
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <!-- Popper JS -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+          <!-- Latest compiled JavaScript -->
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+          <link href="./css/index.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="./css/animation.css" class="">
+    
 </head>
 <body>
 <!--      <div class=" text-uppercase d-flex flex-column align-items-center justify-content-center">-->
@@ -43,9 +52,18 @@
           </div>
       </div>
 
+      <audio class="audio" loop autoplay>
+        <source type="audio/mpeg" src="https://pic.pikbest.com/17/97/21/79v888piCusf.mp3">
+        <source type="audio/ogg" src="https://pic.pikbest.com/17/97/21/79v888piCusf.mp3">
+      </audio>
+
+      <i class="fas fa-2x fa-volume-up volumn" onclick="openVolumn()"></i>
+      <i class="fas fa-volume-mute muted fa-2x"onclick="muted()"></i>
+
+
       <script type="text/javascript" src="./js/main.js"> </script>
       <script type="text/javascript" src="./js/animation.js"> </script>
-
+      <script type="text/javascript" src="./js/audio.js"></script>
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->

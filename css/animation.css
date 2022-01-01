@@ -34,3 +34,15 @@
     height: 100%;
     width: 100%;
 }
+.volumn,.muted{
+    position:absolute;
+    z-index:9;
+    color: white;
+    bottom:0;
+}
+.muted{
+    right:20px;
+}
+.volumn{
+    right:70px
+}
