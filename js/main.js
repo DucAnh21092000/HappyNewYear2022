@@ -136,7 +136,7 @@ function Particle( x, y ) {
     this.y = y;
     // track the past coordinates of each particle to create a trail effect, increase the coordinate count to create more prominent trails
     this.coordinates = [];
-    this.coordinateCount = 5;
+    this.coordinateCount = 8;
     while( this.coordinateCount-- ) {
         this.coordinates.push( [ this.x, this.y ] );
     }
@@ -181,7 +181,7 @@ Particle.prototype.draw = function() {
     // move to the last tracked coordinates in the set, then draw a line to the current x and y
     ctx.moveTo( this.coordinates[ this.coordinates.length - 1 ][ 0 ], this.coordinates[ this.coordinates.length - 1 ][ 1 ] );
     ctx.lineTo( this.x, this.y );
-    ctx.strokeStyle = 'hsla(' + this.hue + ', 100%, ' + this.brightness + '%, ' + this.alpha + ')';
+    ctx.strokeStyle = 'hsla(' + this.hue + ', 140%, ' + this.brightness + '%, ' + this.alpha + ')';
     ctx.stroke();
 }
 
@@ -237,6 +237,9 @@ function loop() {
             fireworks.push( new Firework( cw / 2, ch, random( 0, cw ), random( 0, ch / 2 ) ) );
             fireworks.push( new Firework( cw / 2, ch, random( 0, cw ), random( 0, ch / 2 ) ) );
             fireworks.push( new Firework( cw / 2, ch, random( 0, cw ), random( 0, ch / 2 ) ) );
+            fireworks.push( new Firework( cw / 2, ch, random( 0, cw ), random( 0, ch / 2 ) ) );
+            fireworks.push( new Firework( cw / 2, ch, random( 0, cw ), random( 0, ch / 2 ) ) );
+
             timerTick = 0;
         }
     } else {
