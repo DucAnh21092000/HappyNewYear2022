@@ -8,7 +8,7 @@
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Website chúc mừng năm mới 2022 code by gútboiz Thái Bình"
+      content="Website chúc mừng năm mới 2022 code by gutboiz Thái Bình"
     />
     <link rel="icon" href="./image/logo.svg" class="">
     <!-- Bootstrap CSS -->
@@ -29,6 +29,8 @@
             type="text/css"
             href="//fonts.googleapis.com/css?family=Satisfy"
     />
+    <link rel="stylesheet" href="./css/libs/animate.css" />
+    <link rel="stylesheet" href="./css/site.css" />
 </head>
 <body>
 
@@ -37,18 +39,16 @@
       </canvas>
       <div class="root w-100 ">
           <div class="d-flex w-100 justify-content-center flex-column align-items-center ">
-              <div class="banner year"></div>
-              <div class="">
-                      <div class="banner content"></div>
+              <div class="wow bounceInUp" data-wow-delay="2s" data-wow-duration="5s" >
+                  <div class="banner year"></div>
               </div>
-                <div class="banner mess"></div>
-                <div class="bg__icon icon text-center"></div>
-
+              <div class="wow slideInLeft" data-wow-delay="7s" data-wow-duration="4s">
+                  <div class="banner content"></div>
+              </div>
+              <div class="banner mess"></div>
+              <div class="bg__icon icon text-center"></div>
           </div>
-
       </div>
-
-
 
       <audio class="audio" loop autoplay>
         <source type="audio/mpeg" src="https://pic.pikbest.com/17/97/21/79v888piCusf.mp3">
@@ -59,9 +59,7 @@
       <i class="fas fa-volume-mute muted fa-2x" onclick="muted()"></i>
 
 
-      <script type="text/javascript" src="./js/main.js"> </script>
-      <script type="text/javascript" src="./js/animation.js"> </script>
-      <script type="text/javascript" src="./js/audio.js"></script>
+
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -78,8 +76,11 @@
         crossorigin="anonymous">
       </script>
       <script src="https://cdn.jsdelivr.net/npm/fireworks-js@latest/dist/fireworks.js"></script>
-      <script src="./dist/wow.js" ></script>
       <script src="./dist/wow.min.js"></script>
+      <script src="./dist/wow.js" ></script>
+      <script type="text/javascript" src="./js/main.js"> </script>
+      <script type="text/javascript" src="./js/animation.js"> </script>
+      <script type="text/javascript" src="./js/audio.js"></script>
       <script>
           new WOW().init();
       </script>

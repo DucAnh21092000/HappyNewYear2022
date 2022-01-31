@@ -5,9 +5,12 @@
 // Object chứa giá trị cần hiển thị
 let initialValue = {
     year:"2022",
-    content:"Happy New Year !",
+    content:"Happy New Year !!",
     icon: " ❤❤❤❤",
-    mess:""
+    mess:"Chúc cậu năm mới vui vẻ !! / " +
+        "miệng cười vui vẻ, tiền vào mạnh mẽ,/ cái gì cũng được suôn sẻ,/ " +
+        "để sống tiếp một cuộc đời thật là đẹp đẽ .../"
+
 }
 
 const year = document.querySelector('.year')
@@ -29,14 +32,20 @@ let arrMessResult=[]
 const displayMess = () => {
     setTimeout( () =>{
         const timeOut =setInterval( ()=> {
-            arrMessResult.push( arrMess.shift())           
-            mess.innerHTML = arrMessResult.join("")         
+            let arrShift = arrMess.shift()
+            if(arrShift == '/'){
+                arrMessResult.push('<br>')
+            }
+            else{
+                arrMessResult.push( arrShift)
+            }
+            mess.innerHTML = arrMessResult.join("")
             if(arrMess.length ==0){
                 clearInterval(timeOut)
                 displayIcon()
             }
-        },1000) // thời gian lấy ra từng chữ 1 và hiển thị
-      },2000) // thời gian delay
+        },300) // thời gian lấy ra từng chữ 1 và hiển thị
+      },1000) // thời gian delay
 }
 
 // Hiển thị nội dung lời chúc
@@ -50,8 +59,8 @@ const displayContent = () => {
                 clearInterval(timeOut)
                 displayMess()
             }
-        },1000)
-      },2000)
+        },800)
+      },1000)
 }
 
 // hiển thị icon
