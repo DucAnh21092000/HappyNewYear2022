@@ -20,9 +20,7 @@ body{
 }
 .content{
     font-size: 2rem;
-    color: white;
     opacity: 0.7;
-    text-shadow: red 2px 3px;
 }
 .main{
     background-image: url("https://hinhanhdephd.com/wp-content/uploads/2019/02/hinh-nen-phao-hoa-dong-gif-11.gif");
@@ -32,7 +30,7 @@ body{
     background-size: contain;
     transition: all 20s linear;
 }
-.year,.content{
+.year{
     background-color: black;
 }
 #info {

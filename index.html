@@ -8,7 +8,7 @@
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Website chúc mừng năm mới 2022 code by goodboy Thái Bình"
+      content="Website chúc mừng năm mới 2022 code by gútboiz Thái Bình"
     />
     <link rel="icon" href="./image/logo.svg" class="">
     <!-- Bootstrap CSS -->
@@ -24,34 +24,31 @@
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
           <link href="./css/index.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="./css/animation.css" class="">
-    
+    <link
+            rel="stylesheet"
+            type="text/css"
+            href="//fonts.googleapis.com/css?family=Satisfy"
+    />
 </head>
 <body>
-<!--      <div class=" text-uppercase d-flex flex-column align-items-center justify-content-center">-->
-<!--          <div class="main ">-->
-<!--          </div>-->
-
-<!--      </div>-->
-
-
 
       <canvas id="canvas">
-
           Canvas không hổ trợ trình duyệt của bạn.
       </canvas>
       <div class="root w-100 ">
           <div class="d-flex w-100 justify-content-center flex-column align-items-center ">
-              <div class="animation1 year"></div>
+              <div class="banner year"></div>
               <div class="">
-                <div class="animation2 content">              
-                </div>
-                <div class="mess"></div>
-                <div class="icon text-center"></div>
-               
+                      <div class="banner content"></div>
               </div>
-              
+                <div class="banner mess"></div>
+                <div class="bg__icon icon text-center"></div>
+
           </div>
+
       </div>
+
+
 
       <audio class="audio" loop autoplay>
         <source type="audio/mpeg" src="https://pic.pikbest.com/17/97/21/79v888piCusf.mp3">
@@ -59,7 +56,7 @@
       </audio>
 
       <i class="fas fa-2x fa-volume-up volumn" onclick="openVolumn()"></i>
-      <i class="fas fa-volume-mute muted fa-2x"onclick="muted()"></i>
+      <i class="fas fa-volume-mute muted fa-2x" onclick="muted()"></i>
 
 
       <script type="text/javascript" src="./js/main.js"> </script>
@@ -68,14 +65,23 @@
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        crossorigin="anonymous">
+      </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        crossorigin="anonymous">
+      </script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous">
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/fireworks-js@latest/dist/fireworks.js"></script>
+      <script src="./dist/wow.js" ></script>
+      <script src="./dist/wow.min.js"></script>
+      <script>
+          new WOW().init();
+      </script>
 </body>
 </html>

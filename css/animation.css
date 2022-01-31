@@ -46,3 +46,62 @@
 .volumn{
     right:70px
 }
+
+@import url("http://fonts.cdnfonts.com/css/poppins");
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    overflow: hidden;
+    width: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+.banner {
+    text-align: center;
+    font-family: "Satisfy";
+    font-size: 10vw;
+    background: linear-gradient(
+            to right,
+            red,
+            green,
+            blue,
+            lime,
+            purple,
+            yellow,
+            orange,
+            black
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: gradient 2s linear infinite;
+}
+
+.bg__icon{
+    background: linear-gradient(
+            to right,
+            red,
+           pink,
+           deeppink
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: gradient 2s linear infinite;
+}
+
+
+@keyframes gradient {
+    50% {
+        filter: hue-rotate(360deg);
+    }
+}
