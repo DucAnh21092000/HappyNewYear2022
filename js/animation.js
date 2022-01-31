@@ -59,7 +59,7 @@ const displayContent = () => {
                 clearInterval(timeOut)
                 displayMess()
             }
-        },800)
+        },500)
       },1000)
 }
 
@@ -74,8 +74,8 @@ const displayIcon = () => {
                 clearInterval(timeOut)
                 
             }
-        },1000)
-      },2000)
+        },100)
+      },600)
 }
 
 // function chạy đầu tiên
